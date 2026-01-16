@@ -6,13 +6,13 @@
 #    By: hyamaoka <hyamaoka@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/16 14:25:52 by hyamaoka          #+#    #+#              #
-#    Updated: 2026/01/16 14:25:53 by hyamaoka         ###   ########.fr        #
+#    Updated: 2026/01/16 14:39:32 by hyamaoka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = cub3D
 CC = cc
-CFLAGS = -Wextra -Wall -Werror -g
+CFLAGS = -Wextra -Wall -Werror
 RM = rm -rf
 
 SRC_DIR = ./src
