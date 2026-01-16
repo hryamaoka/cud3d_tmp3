@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "parse.h"
 
 char **change_line_to_map(char **map, char *line, int height) {

@@ -6,7 +6,7 @@
 /*   By: hyamaoka <hyamaoka@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:24:24 by hyamaoka          #+#    #+#             */
-/*   Updated: 2026/01/16 14:24:25 by hyamaoka         ###   ########.fr       */
+/*   Updated: 2026/01/16 16:48:41 by hyamaoka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ int process_elem_line(char *line, t_game *game, int *count) {
     return (1);
   }
   {
-    int i = 0;
+    int i;
+
+    i = 0;
     while (line[i] && (line[i] == ' ' || line[i] == '\t'))
       i++;
     if (line[i] == '#' || (line[i] == '/' && line[i + 1] == '/')) {

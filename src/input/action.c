@@ -13,7 +13,7 @@
 #include "cub3d.h"
 
 #include "input.h"
-#include "keys.h"
+
 
 void interact_door(t_game *game) {
   int target_x;
