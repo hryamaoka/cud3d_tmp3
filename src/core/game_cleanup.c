@@ -6,7 +6,7 @@
 /*   By: hyamaoka <hyamaoka@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:34:24 by hyamaoka          #+#    #+#             */
-/*   Updated: 2026/01/16 14:22:49 by hyamaoka         ###   ########.fr       */
+/*   Updated: 2026/01/16 15:59:44 by hyamaoka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void free_split(char **split) {
   free(split);
 }
 
-void free_all(t_game *game) {
+static void free_tex_paths(t_game *game) {
   if (game->tex.no)
     free(game->tex.no);
   if (game->tex.so)
@@ -32,6 +32,29 @@ void free_all(t_game *game) {
     free(game->tex.we);
   if (game->tex.ea)
     free(game->tex.ea);
+}
+
+static void free_images(t_game *game) {
+  int i;
+
+  i = 0;
+  while (i < 4) {
+    if (game->wall_tex[i].img)
+      mlx_destroy_image(game->mlx, game->wall_tex[i].img);
+    i++;
+  }
+  if (game->door_tex.img)
+    mlx_destroy_image(game->mlx, game->door_tex.img);
+  if (game->sprite_tex[0].img)
+    mlx_destroy_image(game->mlx, game->sprite_tex[0].img);
+  if (game->sprite_tex[1].img)
+    mlx_destroy_image(game->mlx, game->sprite_tex[1].img);
+  if (game->img.img)
+    mlx_destroy_image(game->mlx, game->img.img);
+}
+
+void free_all(t_game *game) {
+  free_tex_paths(game);
   if (game->map.grid)
     free_split(game->map.grid);
   if (game->z_buffer)
@@ -39,24 +62,9 @@ void free_all(t_game *game) {
   if (game->sprites)
     free(game->sprites);
   if (game->mlx) {
-    int i = 0;
-    while (i < 4) {
-      if (game->wall_tex[i].img)
-        mlx_destroy_image(game->mlx, game->wall_tex[i].img);
-      i++;
-    }
-    if (game->door_tex.img)
-      mlx_destroy_image(game->mlx, game->door_tex.img);
-    if (game->sprite_tex[0].img)
-      mlx_destroy_image(game->mlx, game->sprite_tex[0].img);
-    if (game->sprite_tex[1].img)
-      mlx_destroy_image(game->mlx, game->sprite_tex[1].img);
-
-    if (game->img.img)
-      mlx_destroy_image(game->mlx, game->img.img);
+    free_images(game);
     if (game->win)
       mlx_destroy_window(game->mlx, game->win);
-
     mlx_destroy_display(game->mlx);
     free(game->mlx);
   }
