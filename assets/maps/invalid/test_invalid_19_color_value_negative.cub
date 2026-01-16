@@ -1,0 +1,11 @@
+# Test Case 19 (invalid): Color value negative
+# ---------------------------------------------------
+NO ./assets/textures/north.xpm
+SO ./assets/textures/south.xpm
+WE ./assets/textures/west.xpm
+EA ./assets/textures/east.xpm
+F -1,0,0
+C 0,0,0
+11111
+10N01
+11111

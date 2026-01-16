@@ -1,0 +1,10 @@
+# Test Case 13 (invalid): Missing Floor color
+# ---------------------------------------------------
+NO ./assets/textures/north.xpm
+SO ./assets/textures/south.xpm
+WE ./assets/textures/west.xpm
+EA ./assets/textures/east.xpm
+C 200,200,200
+11111
+10N01
+11111

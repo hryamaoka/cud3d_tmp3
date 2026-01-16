@@ -1,0 +1,11 @@
+# Test Case 11 (invalid): Texture path with no extension
+# ---------------------------------------------------
+NO ./assets/textures/north
+SO ./s.xpm
+WE ./w.xpm
+EA ./e.xpm
+F 220,100,0
+C 225,30,0
+11111
+10N01
+11111

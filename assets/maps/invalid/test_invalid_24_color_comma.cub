@@ -1,0 +1,11 @@
+# Test Case 24 (invalid): Color trailing comma
+# ---------------------------------------------------
+NO ./assets/textures/north.xpm
+SO ./assets/textures/south.xpm
+WE ./assets/textures/west.xpm
+EA ./assets/textures/east.xpm
+F 200,200,
+C 0,0,0
+11111
+10N01
+11111

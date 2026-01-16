@@ -1,0 +1,13 @@
+# Test Case 41 (invalid): Multiple players (N and S)
+# ---------------------------------------------------
+NO ./assets/textures/north.xpm
+SO ./assets/textures/south.xpm
+WE ./assets/textures/west.xpm
+EA ./assets/textures/east.xpm
+F 220,100,0
+C 225,30,0
+11111
+10001
+10N01
+10S01
+11111

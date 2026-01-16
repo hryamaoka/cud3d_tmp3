@@ -1,0 +1,123 @@
+Testing maps in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl...
+
+--- Testing Valid Maps (24) ---
+[FAIL (Memory Leak)] assets/maps/valid/wide_hall.cub
+==78147== Syscall param writev(vector[0]) points to uninitialised byte(s)
+==78147==    at 0x4BC3894: writev (writev.c:26)
+==78147==    by 0x4CBAACA: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78147==    by 0x4CBAC4E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78147==    by 0x4CBBD7E: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78147==    by 0x48B50B8: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78147==    by 0x48BA148: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78147==    by 0x48BA52B: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78147==    by 0x115B85: mlx_int_wait_first_expose (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78147==    by 0x1158B5: mlx_new_window (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78147==    by 0x10FDF2: init_window (init_window.c:21)
+==78147==    by 0x10FB1C: main (main.c:24)
+==78147==  Address 0x4d90c2c is 28 bytes inside a block of size 16,384 alloc'd
+==78147==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==78147==    by 0x48A442D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78147==    by 0x115666: mlx_init (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78147==    by 0x10FDAB: init_window (init_window.c:14)
+==78147==    by 0x10FB1C: main (main.c:24)
+==78147== 
+Error
+Could not load textures
+
+[FAIL (Memory Leak)] assets/maps/valid/irregular_tetris.cub
+==78156== Syscall param writev(vector[0]) points to uninitialised byte(s)
+==78156==    at 0x4BC3894: writev (writev.c:26)
+==78156==    by 0x4CBAACA: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78156==    by 0x4CBAC4E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78156==    by 0x4CBBD7E: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78156==    by 0x48B50B8: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78156==    by 0x48BA148: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78156==    by 0x48BA52B: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78156==    by 0x115B85: mlx_int_wait_first_expose (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78156==    by 0x1158B5: mlx_new_window (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78156==    by 0x10FDF2: init_window (init_window.c:21)
+==78156==    by 0x10FB1C: main (main.c:24)
+==78156==  Address 0x4da693c is 28 bytes inside a block of size 16,384 alloc'd
+==78156==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==78156==    by 0x48A442D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78156==    by 0x115666: mlx_init (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78156==    by 0x10FDAB: init_window (init_window.c:14)
+==78156==    by 0x10FB1C: main (main.c:24)
+==78156== 
+Error
+Could not load textures
+
+[FAIL (Memory Leak)] assets/maps/valid/minimal_3x3.cub
+==78158== Syscall param writev(vector[0]) points to uninitialised byte(s)
+==78158==    at 0x4BC3894: writev (writev.c:26)
+==78158==    by 0x4CBAACA: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78158==    by 0x4CBAC4E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78158==    by 0x4CBBD7E: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78158==    by 0x48B50B8: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78158==    by 0x48BA148: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78158==    by 0x48BA52B: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78158==    by 0x115B85: mlx_int_wait_first_expose (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78158==    by 0x1158B5: mlx_new_window (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78158==    by 0x10FDF2: init_window (init_window.c:21)
+==78158==    by 0x10FB1C: main (main.c:24)
+==78158==  Address 0x4d90bfc is 28 bytes inside a block of size 16,384 alloc'd
+==78158==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==78158==    by 0x48A442D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78158==    by 0x115666: mlx_init (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78158==    by 0x10FDAB: init_window (init_window.c:14)
+==78158==    by 0x10FB1C: main (main.c:24)
+==78158== 
+Error
+Could not load textures
+
+[FAIL (Memory Leak)] assets/maps/valid/whitespace_padding.cub
+==78159== Syscall param writev(vector[0]) points to uninitialised byte(s)
+==78159==    at 0x4BC3894: writev (writev.c:26)
+==78159==    by 0x4CBAACA: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78159==    by 0x4CBAC4E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78159==    by 0x4CBBD7E: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78159==    by 0x48B50B8: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78159==    by 0x48BA148: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78159==    by 0x48BA52B: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78159==    by 0x115B85: mlx_int_wait_first_expose (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78159==    by 0x1158B5: mlx_new_window (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78159==    by 0x10FDF2: init_window (init_window.c:21)
+==78159==    by 0x10FB1C: main (main.c:24)
+==78159==  Address 0x4dc72dc is 28 bytes inside a block of size 16,384 alloc'd
+==78159==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==78159==    by 0x48A442D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78159==    by 0x115666: mlx_init (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78159==    by 0x10FDAB: init_window (init_window.c:14)
+==78159==    by 0x10FB1C: main (main.c:24)
+==78159== 
+Error
+Could not load textures
+
+[FAIL (Exited with 1)] assets/maps/valid/minimalist.cub
+Error
+Invalid map characters
+
+[FAIL (Memory Leak)] assets/maps/valid/inner_void.cub
+==78168== Syscall param writev(vector[0]) points to uninitialised byte(s)
+==78168==    at 0x4BC3894: writev (writev.c:26)
+==78168==    by 0x4CBAACA: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78168==    by 0x4CBAC4E: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78168==    by 0x4CBBD7E: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==78168==    by 0x48B50B8: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78168==    by 0x48BA148: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78168==    by 0x48BA52B: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78168==    by 0x115B85: mlx_int_wait_first_expose (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78168==    by 0x1158B5: mlx_new_window (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78168==    by 0x10FDF2: init_window (init_window.c:21)
+==78168==    by 0x10FB1C: main (main.c:24)
+==78168==  Address 0x4db17ec is 28 bytes inside a block of size 16,384 alloc'd
+==78168==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==78168==    by 0x48A442D: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+==78168==    by 0x115666: mlx_init (in /home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/cub3D)
+==78168==    by 0x10FDAB: init_window (init_window.c:14)
+==78168==    by 0x10FB1C: main (main.c:24)
+==78168== 
+Error
+Could not load textures
+
+Valid Maps: 18 PASSED, 6 FAILED

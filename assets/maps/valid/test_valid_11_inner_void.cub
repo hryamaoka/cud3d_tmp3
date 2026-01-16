@@ -1,0 +1,16 @@
+# Test Case 11 (valid): Inner void
+# ---------------------------------------------------
+NO ./assets/textures/wall_n.xpm
+SO ./assets/textures/wall_s.xpm
+WE ./assets/textures/wall_w.xpm
+EA ./assets/textures/wall_e.xpm
+
+F 220,100,0
+C 225,30,0
+
+111111
+100001
+101111
+101  1
+1N1  1
+111111

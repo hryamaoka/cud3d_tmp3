@@ -1,0 +1,16 @@
+# Test Case 5 (valid): Valid map with irregular shape
+# ---------------------------------------------------
+NO ./assets/textures/north.xpm
+SO ./assets/textures/south.xpm
+WE ./assets/textures/west.xpm
+EA ./assets/textures/east.xpm
+
+F 220,100,0
+C 225,30,0
+
+11111
+1000111
+10N0001
+1111111
+
+

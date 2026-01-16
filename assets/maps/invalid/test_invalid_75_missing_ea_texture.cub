@@ -1,0 +1,13 @@
+# Test Case 75 (invalid): Missing ea texture
+# ---------------------------------------------------
+NO ./assets/textures/wall_n.xpm
+SO ./assets/textures/wall_s.xpm
+WE ./assets/textures/wall_w.xpm
+
+F 220,100,0
+C 225,30,0
+
+11111
+10001
+10N01
+11111

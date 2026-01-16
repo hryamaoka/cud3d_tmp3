@@ -1,0 +1,93 @@
+Starting verification...
+=== Testing Invalid Maps ===
+[0;32m[PASS][0m ./assets/maps/invalid/RGB_few_num.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/RGB_few_num2.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/RGB_out_of_bonds.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/RGB_out_of_bonds2.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/RGB_wrong_format.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_invalid_rgb.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_missing.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_missing_ceiling_rgb.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_missing_floor_rgb.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_none.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/color_range.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/duplicate_player.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/empty.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/file_letter_end.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/forbidden.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/invalid_char.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/invalid_char_bonus.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_border_not_wall.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_border_not_wall2.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_first.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_illegal_size.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_middle.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_missing.cub : Exited with error as expected (139)
+[0;32m[PASS][0m ./assets/maps/invalid/map_not_last.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_only.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_ring.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_too_small.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/map_wrong_character.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/missing_floor.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/missing_texture.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/no_player.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/not_closed.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/not_closed_bonus.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/player_multiple.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/player_none.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/player_not_exist.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/player_on_edge.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/texture_empty_path.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/texture_without_NO.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/texture_wrong_path.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_dir.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_duplicates.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_forbidden.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_invalid.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_missing.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_none.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/textures_not_xpm.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/wall_hole_east.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/wall_hole_north.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/wall_hole_south.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/wall_hole_west.cub : Exited with error as expected (1)
+[0;32m[PASS][0m ./assets/maps/invalid/wall_none.cub : Exited with error as expected (1)
+=== Testing Valid Maps ===
+[0;32m[PASS][0m ./assets/maps/valid/asymmetrical.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/big.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/big2.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/bonus.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/cheese_maze.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/columns.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/creepy.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/dungeon.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/island.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/library.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/little.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/long_corridor.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/matrix.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/maze.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/ring.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/room_with_island.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/sad_face.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/square.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/square_map.cub : Exited with error: Error: Invalid elements
+[0;31m[FAIL][0m ./assets/maps/valid/subject.cub : Exited with error: Error: Map is not closed
+[0;31m[FAIL][0m ./assets/maps/valid/subject_map.cub : Exited with error: Error: Could not load textures
+[0;32m[PASS][0m ./assets/maps/valid/test.cub : Timed out (Game started as expected)
+[0;31m[FAIL][0m ./assets/maps/valid/test_map.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_map_hole.cub : Exited with error: Error: Map is not closed
+[0;31m[FAIL][0m ./assets/maps/valid/test_pos_bottom.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_pos_left.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_pos_right.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_pos_top.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_textures.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/test_whitespace.cub : Exited with error: Error: Invalid elements
+[0;31m[FAIL][0m ./assets/maps/valid/tester.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/triangle.cub : Exited with error: Error: Could not load textures
+[0;31m[FAIL][0m ./assets/maps/valid/works.cub : Exited with error: Error: Invalid elements
+[0;32m[PASS][0m ./assets/maps/valid/zigzag.cub : Timed out (Game started as expected)
+========================================
+Total Tests: 86
+[0;32mPassed: 61[0m
+[0;31mFailed: 25[0m

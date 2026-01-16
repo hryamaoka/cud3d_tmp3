@@ -1,0 +1,17 @@
+{
+    // =============================
+    // 42-header extension settings
+    // =============================
+    "42header.username": "hyamaoka",
+    "42header.email": "hyamaoka@student.42tokyo.jp",
+    // =============================
+    // C/C++ Configuration
+    // =============================
+    "C_Cpp.default.includePath": [
+        "//wsl.localhost/Ubuntu/home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/**",
+        "//wsl.localhost/Ubuntu/home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/includes",
+        "//wsl.localhost/Ubuntu/home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/libft/includes",
+        "//wsl.localhost/Ubuntu/home/hirokiyamaoka/projects/bk/mondontoruy/cub3d_wsl/minilibx-linux"
+    ],
+    "C_Cpp.intelliSenseEngine": "Tag Parser"
+}

@@ -1,0 +1,10 @@
+# Test Case 6 (invalid): Missing NO texture
+# ---------------------------------------------------
+SO ./so.xpm
+WE ./we.xpm
+EA ./ea.xpm
+F 220,100,0
+C 225,30,0
+11111
+10N01
+11111

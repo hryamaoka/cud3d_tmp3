@@ -1,0 +1,9 @@
+-I
+includes
+-I
+libft/includes
+-I
+minilibx-linux
+-Wextra
+-Wall
+-Werror
