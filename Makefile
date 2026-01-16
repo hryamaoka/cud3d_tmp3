@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: hyamaoka <hyamaoka@student.42tokyo.jp>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/01/16 14:25:52 by hyamaoka          #+#    #+#              #
+#    Updated: 2026/01/16 14:25:53 by hyamaoka         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = cub3D
 CC = cc
 CFLAGS = -Wextra -Wall -Werror -g
@@ -9,9 +21,9 @@ LIB_DIR = ./libft
 
 SRC = src/main.c \
 	src/core/game_init.c src/core/window.c src/core/game_cleanup.c src/core/error.c \
-	src/parsing/check_file.c src/parsing/parse_main.c src/parsing/parse_map.c src/parsing/parse_map_utils.c \
-	src/parsing/parse_textures.c src/parsing/parse_colors.c src/parsing/textures_init.c \
-	src/parsing/parse_player.c src/parsing/parse_utils.c src/parsing/valid.c src/parsing/valid_map.c \
+	src/parser/check_file.c src/parser/parse_main.c src/parser/parse_map.c src/parser/parse_map_utils.c \
+	src/parser/parse_textures.c src/parser/parse_colors.c src/parser/textures_init.c \
+	src/parser/parse_player.c src/parser/parse_utils.c src/parser/valid.c src/parser/valid_map.c \
 	src/input/movement.c src/input/action.c src/input/rotate.c \
 	src/utils/utils.c \
 	src/engine/raycast.c src/engine/raycast_utils.c \
@@ -36,7 +48,7 @@ else
 endif
 
 INCLUDES = -I$(INC_DIR) -I$(LIB_DIR)/includes -I$(MLX_DIR) \
-           -Isrc/core -Isrc/parsing -Isrc/engine -Isrc/render -Isrc/input -Isrc/utils
+           -Isrc/core -Isrc/parser -Isrc/engine -Isrc/render -Isrc/input -Isrc/utils
 
 all: $(NAME)
 

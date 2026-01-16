@@ -82,9 +82,9 @@
 
 ---
 
-## 2. 解析モジュール (src/parsing)
+## 2. 解析モジュール (src/parser)
 
-### `src/parsing/parse_main.c`
+### `src/parser/parse_main.c`
 **概要**: `.cub` ファイル解析のメインロジック。
 **コード解説**:
 - **L3 `process_elem_line`**: マップ要素（テクスチャパスや色）の行を処理。
@@ -100,7 +100,7 @@
     - **L59**: `parse_map` (parse_map.c) に `first_line` を渡してマップ部分を解析。
     - **L61-65**: マップの検証（文字、閉鎖性、プレイヤー存在）を行い、不正ならエラー終了。
 
-### `src/parsing/parse_map.c`
+### `src/parser/parse_map.c`
 **概要**: マップデータ部分（0, 1, N, S...）の読み込みとメモリ確保。
 **コード解説**:
 - **L5 `process_map_line`**: 読み込んだ1行をマップ配列に追加。
@@ -113,14 +113,14 @@
     - **L61**: `parse_elem` から渡された `first_line` から処理開始。
 - **L73 `parse_map`**: マップ解析のエントリー。`read_lines` と `normalize_map` を統括。
 
-### `src/parsing/parse_textures.c`
+### `src/parser/parse_textures.c`
 **概要**: テクスチャパス（NO, SO, WE, EA）の解析。
 **コード解説**:
 - **L15 `set_texture`**: パス文字列を検証して保存。
     - **L26**: 拡張子が `.xpm` であるかチェック。
 - **L32 `parse_texture`**: 行をスペースで分割し、識別子（NO等）に対応する変数を設定。
 
-### `src/parsing/parse_colors.c`
+### `src/parser/parse_colors.c`
 **概要**: 床・天井の色情報（F, C）の解析。
 **コード解説**:
 - **L15 `check_digits`**: 文字列が数値のみで構成されているか確認。
@@ -129,25 +129,25 @@
 - **L62 `parse_rgb_line`**: "220,100,0" のような文字列を解析。
 - **L91 `parse_color`**: "F 220,100,0" のような行を解析し、`parse_rgb_line` に渡す。
 
-### `src/parsing/valid_map.c`
+### `src/parser/valid_map.c`
 **概要**: マップの整合性チェック。
 **コード解説**:
 - **L13 `check_map_chars`**: マップ内に許可された文字（012NSEWスペース）以外が含まれていないか全走査。
 - **L49 `check_map_closed`**: マップが壁で閉じられているか確認（Flood fill的なチェック）。
     - **L36 `check_surroundings`**: 床（0）やプレイヤー（NEWS）の周囲8方向にスペース（外）がないか確認。もしあれば、壁で囲まれていないためエラー。
 
-### `src/parsing/parse_player.c`
+### `src/parser/parse_player.c`
 **概要**: プレイヤーの初期位置と向きの設定。
 **コード解説**:
 - **L3 `set_direction`**: 文字（N/S/W/E）に応じて、方向ベクトル(`dir_x`, `dir_y`)とカメラ平面ベクトル(`plane_x`, `plane_y`)を設定。
     - 例: 'N' なら `dir_y = -1` (上), `plane_x = 0.66` (視野角確保)。
 - **L35 `find_player`**: マップ全体を走査し、プレイヤーが**ただ1人**存在することを確認。見つけたらその座標をセットし、マップ上の文字を '0'（床）に置き換える。
 
-### `src/parsing/check_file.c`
+### `src/parser/check_file.c`
 **概要**: ファイル拡張子チェック。
 - `.cub` で終わっているかを文字比較で判定。
 
-### `src/parsing/textures_init.c`
+### `src/parser/textures_init.c`
 **概要**: 実際の画像ファイルのロード。
 **コード解説**:
 - **L3 `load_texture`**: パスから `mlx_xpm_file_to_image` を呼び出して画像を読み込み、`game->wall_tex` 等に格納。
